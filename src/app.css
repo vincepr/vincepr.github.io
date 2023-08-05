@@ -1,0 +1,89 @@
+:root {
+  --brand-background: #1e1f26;
+  --brand-primary: #ddd;
+  --brand-secondary: #999;
+
+  --brand-on-secondary-primary: #ddd;
+  --brand-on-secondary-secondary: #999;
+
+  --brand-background-secondary: #141419;
+
+  --brand-accent: #a3a6cc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--brand-background);
+  background-image: url(/background.svg);
+  background-size: 25px;
+  background-position: 50%, 50%;
+  background-origin: content-box;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-primary);
+  margin-bottom: 8px;
+}
+
+p {
+  color: var(--brand-secondary);
+  line-height: 1.4em;
+}
+
+a {
+  color: var(--brand-accent);
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        animation: none;
+        transition: none;
+    }
+}
+
+ul {
+  color: var(--brand-secondary);
+}
+
+#hline {
+  fill: none;
+  stroke: #333;
+  stroke-width: calc(0.35px - 0.01vw);
+}
+    
+button, .button {
+  background-color: var(--brand-background);
+  border: 2px solid rgba(200, 200, 200, 0.08);
+  padding: 0.4em 0.8em;
+  border-radius: 0.5em;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
+  color: var(--brand-secondary);
+  display: inline-block;
+}
+
+button :global(svg), .button :global(svg) {
+  margin-right: 0.2em;
+}
+
+button:hover, .button:hover {
+  background-color: white;
+  border-color: transparent;
+  color: black;
+}
