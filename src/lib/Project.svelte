@@ -1,10 +1,12 @@
 <script lang="ts">
   import Fa from "svelte-fa";
   import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+    import { faGithub, faLinkedin, faXing } from "@fortawesome/free-brands-svg-icons";
 
   import { onMount } from "svelte";
 
   export let preview: string;
+  export let git: string;
   export let url: string;
 
   let mount = false;
@@ -15,6 +17,11 @@
 
 <page class:mount on:mouseleave={() => (showDescription = false)}>
   <header>
+    <a class="button" href={git}>
+      <Fa icon={faGithub} />
+      Github
+    </a>
+
     <a class="url" href={url}>
       {url}
       <Fa icon={faArrowUpRightFromSquare} />
@@ -35,7 +42,9 @@
     <main class:show={showDescription}>
       <slot>No description</slot>
     </main>
+    
   </picture>
+  
 </page>
 
 <style>
@@ -79,6 +88,14 @@
     border-radius: 15px 15px 0 0;
     padding: 8px 20px;
     border-bottom: 1px solid rgba(200, 200, 200, 0.08);
+    display: flex;
+  }
+
+  header .button{
+    padding: 3px 10px;
+    display: flex;
+    gap: 0.3rem;
+
   }
 
   header .url {
@@ -90,7 +107,7 @@
     background-color: var(--brand-background);
     padding: 5px 10px;
     border-radius: 10px;
-    max-width: 400px;
+    min-width: 400px;
     margin: auto;
     transition: color 0.3s ease;
     overflow: hidden;

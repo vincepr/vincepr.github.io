@@ -180,38 +180,41 @@
 
             <br />
 
-            <a class="button" href="https://github.com/vincepr">
+            <a class="button" 
+            href="https://github.com/vincepr">
                 <Fa icon={faGithub} />
                 Github
             </a>
         </section>
         <ul>
             <li>
-                <Project preview="interpreter" url="https://vincepr.github.io/c_compiler">
+                <Project preview="interpreter" 
+                url="https://vincepr.github.io/c_compiler"
+                git="https://github.com/vincepr/c_compiler">
                     A stack-based interpreter for my own simple programming language. Written in C 
                     wasm enables running it in the browser.
                 </Project>
             </li>
             <li>
-                <Project preview="md" url="https://vincepr.github.io/md">
+                <Project preview="md" url="https://vincepr.github.io/md" git="https://github.com/vincepr/md">
                     A Collection of Transcripts and Notes i am gathering while learning new Stuff. 
                     I also added a few interactive Javascript unit-tests in the Blog-Part.
                 </Project>
             </li>
             <li>
-                <Project preview="microphone" url="https://mic.vprobst.de/">
+                <Project preview="microphone" url="https://mic.vprobst.de" git="https://github.com/vincepr/go_micmute_server">
                     Enables the user of the App to remote mute and controll volume of
                     the Windows-machine via a webinterface.
                     Written in Csharp with a GO-server using Websockets in the backend.
                 </Project>
             </li>
             <li>
-                <Project preview="portfolio" url="https://vincepr.github.io/vite-portfolio/">
+                <Project preview="portfolio" url="https://vincepr.github.io/vite-portfolio" git="https://github.com/vincepr/vite-portfolio">
                     A portfolio app using react, tailwind and vite.
                 </Project>
             </li>
             <li>
-                <Project preview="tetris" url="https://vincepr.github.io/rs_tetris">
+                <Project preview="tetris" url="https://vincepr.github.io/rs_tetris" git="https://github.com/vincepr/rs_tetris">
                     A Rust project using wasm to run in the browser. The Frontend uses a Rust wrapper
                     for React.
                 </Project>
@@ -219,7 +222,7 @@
             <li>
                 <Project
                     preview="chess"
-                    url="https://vincepr.github.io/chessjs/public/chess_in_frontend/index.html">
+                    url="https://vincepr.github.io/chessjs/public/chess_in_frontend" git="https://github.com/vincepr/chessjs">
                     My first JavaScript Project. 
                     Created a Multiplayer Chess server using Websockets and Nodejs.
                     And a Offline Singleplayer Client with vanilla JS.
@@ -231,7 +234,7 @@
     <div class="contact">
         <div id="contact" />
         <section>
-            <h1>Contact Me</h1>
+            <h1>Contact</h1>
             <p>
                 The easiest way to contact me, is to write me an Email:
             </p>
@@ -390,6 +393,7 @@
     }
 
     .logo img {
+        margin: auto;
         width: 110px;
         aspect-ratio: 1;
         border-radius: 30px;
