@@ -1060,7 +1060,7 @@ let particlesInit = async engine => {
         padding: calc(2.5vw + 90px) 15px;
         text-align: justify;
     }
-
+    
     .projects ul {
         margin-top: calc(2vw + 50px);
         overflow-x: scroll;

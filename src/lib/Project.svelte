@@ -24,7 +24,7 @@
 
     <a class="url" href={url}>
       {url}
-      <Fa icon={faArrowUpRightFromSquare} />
+      <Fa class="iconUrl" icon={faArrowUpRightFromSquare} />
     </a>
   </header>
 
@@ -47,7 +47,13 @@
   
 </page>
 
+
+
 <style>
+  :global(.iconUrl) {
+    padding-left: 0.5em;
+  }
+
   page {
     border-radius: 15px;
     display: flex;
@@ -114,9 +120,10 @@
     white-space: nowrap;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     header .url {
       font-size: 14px;
+      min-width: auto;
     }
   }
 
