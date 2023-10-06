@@ -646,7 +646,7 @@ let particlesInit = async engine => {
 
 
 <svelte:head>
-    <title>Vincent Probst</title>
+    <title>Vincent Probst | Portfolio </title>
 </svelte:head>
 
 <hero class:mount>

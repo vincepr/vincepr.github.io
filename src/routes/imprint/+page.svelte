@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Lucas Birkert | Imprint</title>
+  <title>Vincent Probst | Impressum</title>
 </svelte:head>
 
 <main>
