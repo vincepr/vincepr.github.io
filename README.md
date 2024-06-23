@@ -1,7 +1,9 @@
+# Hosting 
+
 https://vincepr.github.io
 
-# Added
+# run it locally
 ```
-npm add svelte-particles
-npm add tsparticles-slim
+npm install
+npm run dev
 ```
